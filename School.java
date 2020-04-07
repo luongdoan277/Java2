@@ -58,13 +58,13 @@ public class School {
                 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/adf2?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC", "root", "");
                 PreparedStatement pstmt = conn.prepareStatement("insert into student values (?, ?, ?, ?)");
         ) {
-            conn.setAutoCommit(false);  // Disable auto-commit for each SQL statement
             for (int i=0; i<this.myStudent.size();i++){
                 pstmt.setString(1, myStudent.get(i).getId());  // Set values for parameters 1 to 5
                 pstmt.setString(2, myStudent.get(i).getName());
                 pstmt.setString(3, myStudent.get(i).getAddress());
                 pstmt.setString(4, myStudent.get(i).getPhone());
                 pstmt.addBatch();
+                pstmt.executeUpdate();
             }
         } catch (Exception e) {
             e.printStackTrace();
