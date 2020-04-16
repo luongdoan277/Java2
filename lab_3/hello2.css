@@ -1,0 +1,22 @@
+xsampdoc{
+    border:3px solid #00ff00;
+    width: 100px;
+    height: 80px;
+    overflow: scroll;
+}
+greeting{
+    display: block;
+    font-size: 36px;
+    color: red;
+}
+extension{
+    display: block;
+    font-size: 36px;
+    color: #000000;
+}
+answer[class=ans]{
+    font-size: 36px;
+}
+answer[class=ans] extension{
+    color: deepskyblue;
+}
