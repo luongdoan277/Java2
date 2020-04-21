@@ -1,0 +1,24 @@
+{
+    "header": "Adobe SVG Viewer",
+    "item":
+      [
+        "Open",
+        "OpenNew",
+        "ZoomIn",
+        "ZoomOut",
+        "OriginalView",
+        "Quality",
+        "Pause",
+        "Mute",
+        "Find",
+        "FindAgain",
+        "Copy",
+        "CopyAgain",
+        "CopySVG",
+        "ViewSVG",
+        "ViewSource",
+        "SaveAs",
+        "Help",
+        "About"
+      ]
+}
